@@ -1,91 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" >
-        </div>
-        <!--Hamburger Menu-->
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <!--Hamburger Menu-->
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="">Features</a>
-                </li>
-                <li>
-                    <a href="">Pricing</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img src="images/logo.png" />
+      </div>
+      <!--Hamburger Menu-->
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <!--Hamburger Menu-->
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="" class="active">Home</a>
+          </li>
+          <li>
+            <a href="">Features</a>
+          </li>
+          <li>
+            <a href="#container-pricing">Pricing</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!--Main-->
     <div class="container">
-        <div class="description">
-            <h1>Daily Motivation</h1>
-            <p>
-                Feel lost? With Lack of motivation?
-                Want to escape the Matrix, but don't know how?
-                Join Our Community
-            </p>
-            <button class="btn-main">Learn More</button>
-
-        </div>
-        <div class="canva-image">
-            <img src="images/3.png">
-        </div>
+      <div class="description">
+        <h1>Daily Motivation</h1>
+        <p>
+          Feel lost? With Lack of motivation? Want to escape the Matrix, but
+          don't know how? Join Our Community
+        </p>
+        <button class="btn-main">Learn More</button>
+      </div>
+      <div class="canva-image">
+        <img src="images/3.png" />
+      </div>
     </div>
-    
 
     <!--Main-->
 
     <!--Quote Zyzz-->
     <div class="quotes-section">
-        <div class="zyzz">
-            <img src="images/Zyzz.jpg">
+      <div class="zyzz">
+        <img src="images/Zyzz.jpg" />
+      </div>
 
-        </div>
-
-        <div class="quote-caption">
-            <p>
-                Everybody one day will die and be forgotten.
-                Find a passion, form relationships, 
-                don’t be afraid to get out there and f*ck what everyone else thinks,
-                 trust me, its alot more fun that way.” – Zyzz
-            </p>
-
-        </div>
+      <div class="quote-caption">
+        <blockquote>
+          "Everybody one day will die and be forgotten. Find a passion, form
+          relationships, don’t be afraid to get out there and f*ck what everyone
+          else thinks, trust me, its a lot more fun that way.” – Zyzz
+        </blockquote>
+      </div>
     </div>
 
     <!--Quote Zyzz-->
 
+    <!--Testimonials-->
+    <div class="testimonial-container">
+      <div class="carousel">
+        <img src="images/Morpheus-removebg-preview.png" alt="" />
+        <blockquote class="testimonial">
+          <p class="testimonial-test">
+            "I'm trying to free your mind Neo. But I can only show you the door.
+            You're the one that has to walk through it."
+          </p>
+          <p class="testimonial-author">Morpheus</p>
+          <p class="testimonial-job">The MATRIX</p>
+        </blockquote>
+        <img src="images/BP-removebg-preview.png" alt="" />
+        <blockquote class="testimonial">
+          <p class="testimonial-test">
+            "You are not your job. You are not how much money you have in the
+            bank. You are not the car you drive. You are not the contents of
+            your wallet."
+          </p>
+          <p class="testimonial-author">Tyler Durden</p>
+          <p class="testimonial-job">Fight Club</p>
+        </blockquote>
+        <img src="images/Morpheus-removebg-preview.png" alt="" />
+        <blockquote class="testimonial">
+          <p class="testimonial-test">
+            You takethe blue pill – the story ends, you wake up in your bed and believe whatever you want to believe.
+             You take the red pill – you stay in Wonderland and I show you how deep the rabbit-hole goes. 
+          </p>
+          <p class="testimonial-author">Morpheus</p>
+          <p class="testimonial-job">M A T R I X</p>
+        </blockquote>
+        <img src="images/BP-removebg-preview.png" alt="" />
+        <blockquote class="testimonial">
+          <p class="testimonial-test">
+            "Without pain, without sacrifice, we would have nothing.
+          </p>
+          <p class="testimonial-author">Tyler Durden</p>
+          <p class="testimonial-job">Fight Club</p>
+        </blockquote>
+
+        <!--SLIDER BUTTONS-->
+        <button class="btn btn--left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+        <button class="btn btn--right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+        <div class="dots">
+          <button class="dot dot--fill">&nbsp;</button>
+          <button class="dot">&nbsp;</button>
+          <button class="dot">&nbsp;</button>
+          <button class="dot">&nbsp;</button>
+        </div>
+      </div>
+    </div>
+    <!--Testimonials-->
+
+    <!--Pricing-->
+    <div class="container-pricing" id="container-pricing">
+        <div class="pricing-title">
+            <h3>Pricing Plan</h3>
+        </div>
+      <div class="pricing-table">
+        <!--Box 1-->
+        <div class="price-box">
+          <div class="price-main">
+            <div class="p-titlle">BASIC</div>
+            <div class="p-price">FREE</div>
+            <ul class="p-items">
+              <li>
+                <i class="fa fa-check"></i>
+                24/7
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                Q&A Session
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                Free Downloadable Resources
+              </li>
+            </ul>
+          </div>
+          <div class="price-footer">
+            <button class="p-button">Buy now</button>
+          </div>
+        </div>
+        <!--BOX 2-->
+        <div class="price-box">
+          <div class="price-main">
+            <div class="recommended">Recommended</div>
+            <div class="p-titlle">MID</div>
+            <div class="p-price">15$ <span>per month</span></div>
+            <ul class="p-items">
+              <li>
+                <i class="fa fa-check"></i>
+                All Benefits from the FREE plan
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                Access To Our private Community
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                24/7 Support
+              </li>
+            </ul>
+          </div>
+          <div class="price-footer">
+            <button class="p-button">Buy now</button>
+          </div>
+        </div>
+        <!--BOX 3-->
+        <div class="price-box">
+          <div class="price-main">
+            <div class="p-titlle">PRO</div>
+            <div class="p-price">45$ <span>per month</span></div>
+            <ul class="p-items">
+              <li>
+                <i class="fa fa-check"></i>
+                24/7 Support
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                1-On-1 Coaching
+              </li>
+              <li>
+                <i class="fa fa-check"></i>
+                Access To Our private Community
+              </li>
+            </ul>
+          </div>
+          <div class="price-footer">
+            <button class="p-button">Buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Pricing End-->
+
+    <!--Contact Us-->
+    <div class="contact-container" id="contact">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="8d173534-846b-44b1-81a5-3618bdb08894"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="contact-inputs"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-inputs"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="contact-right">
+        <img src="images/Arnold_Schwarzenegger-removebg-preview.png" />
+      </div>
+    </div>
+
+    <!--Contact Us End-->
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiiate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li><a href="#">T-Shirt</a></li>
+              <li><a href="#">Cup</a></li>
+              <li><a href="#">Bandana</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow US</h4>
+            <div class="social-links">
+              <a href="https://www.youtube.com/@HeartbeatWisdom"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--FOOTER-->
+
     <script>
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function() {
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+      };
+
+      //Testimonial functionality
+      let currentSlide = 0;
+      const testimonials = document.querySelectorAll(".testimonial");
+      const images = document.querySelectorAll(".carousel img");
+
+      function showSlide(index) {
+        testimonials.forEach((slide, i) => {
+          slide.style.display = i === index ? "block" : "none";
+        });
+        images.forEach((image, i) => {
+          image.style.display = i === index ? "block" : "none";
+        });
+        updateDots(index);
+      }
+
+      function prevTestimonial() {
+        currentSlide =
+          (currentSlide - 1 + testimonials.length) % testimonials.length;
+        showSlide(currentSlide);
+      }
+
+      function nextTestimonial() {
+        currentSlide = (currentSlide + 1) % testimonials.length;
+        showSlide(currentSlide);
+      }
+
+      // Slider buttons functionality
+      const prevBtn = document.querySelector(".btn--left");
+      const nextBtn = document.querySelector(".btn--right");
+
+      prevBtn.addEventListener("click", prevTestimonial);
+      nextBtn.addEventListener("click", nextTestimonial);
+
+      // Dot indicators functionality
+      let dots = document.querySelectorAll(".dot");
+
+      function updateDots(index) {
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("dot--fill", i === index);
+        });
+      }
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          showSlide(index);
+        });
+      });
+
+      // Show the initial slide
+      showSlide(currentSlide);
+
+      //Testimonial functionality
     </script>
-</body>
+  </body>
 </html>
