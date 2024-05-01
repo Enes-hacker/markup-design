@@ -8,6 +8,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6{
+    background-image: linear-gradient(180deg, #c89116, yellow);
+   -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent; 
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+}
+
 body{
     background: #fefefe;
 }
@@ -211,33 +219,537 @@ header{
     background: #000101;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-   
+    align-items: center; 
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 60px;
 
   
 }
 
 .quote-caption{
-    
-    width: 60%;
+    width: 50%;
     color: white;
-    font-size: 3em;
+    font-size: 2em;
+    line-height: 1.5;
 }
 
 .zyzz{
-    margin-top: 7rem;
+    margin-top: 1rem;
     width: 35%;
     border: linear-gradient(to right, gold, orange);
     border-radius: 1rem;
  
 }
 .zyzz img{
-    width: 100%;
+    width: 80%;
    /* aspect-ratio: 1/1;*/
     border-radius: 1rem;
-   
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.75);
 }
 /**/
+
+/*Testimoias*/
+.testimonial-container{
+    background: #000101;
+    padding: 0.1rem;
+
+}
+.carousel img{
+    height: 200px;
+    border-radius: 8px;
+    transform: scale(1.5); /*transform the image size with 1.5x*/
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /*add shadow to the image*/
+    
+ }
+
+
+
+
+ .carousel{
+     width: 800px;
+     margin: 100px auto;
+     /*padding: 32px;*/
+    /* padding-left: 86px; *//*moving the img to the left*/
+     /*padding-right: 48px;*/
+     padding:32px 48px 32px 86px ;
+     /*background-color: #087f5b;*/
+     background: #262c3c;
+     border-radius: 8px;
+     display: flex;
+     align-items: center;
+     gap: 86px;
+     position: relative;
+     border:2px solid gold;
+ }
+
+ @media (max-width: 768px) {
+     .carousel{
+         flex-direction: column;
+         width: 380px;
+     }
+ }
+
+ /*.carousel img{
+     width: 20%;
+ }*/
+ .testimonial-test{
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 1.5; /*отстояние между редовете*/
+     margin-bottom: 32px;
+     color: #e6fcf5;
+ }
+ .testimonial-author{
+     font-size: 14px;
+     margin-bottom: 4px;
+      background-image: linear-gradient(180deg, #c89116, yellow);
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+ }
+ .testimonial-job{
+     font-size: 12px;
+     letter-spacing: 0.3rem;
+     background-image: linear-gradient(180deg, #c89116, yellow);
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+ }
+
+ /*Controls - Slider Buttons*/
+ .btn{
+    background: linear-gradient(to right, #c89116, yellow);
+     border: none;
+     border-radius: 50%;
+     height: 40px;
+     width: 40px;
+     position: absolute;
+     cursor: pointer;
+     display: flex; /*centers the slider/button icon to the center */
+     align-items: center;  /*centers the slider/button icon to the center */
+     justify-content: center;  /*centers the slider/button icon to the center */
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+ }
+
+ .btn-icon{
+     height: 24px;
+     width: 24px;
+     /*stroke: #087f5b; changes the carousel icon color*/
+     stroke: #11101b;
+ }
+
+ .btn--left{
+     /*In relation to parent element*/
+    left: 0;  /*positions the button to the left*/
+    top: 50%;
+
+    /*In relation to ELEMENT ITSELF*/
+    transform: translate(-50%, -50%);
+ }
+
+ .btn--right{
+     right: 0; /*positions the button to the right*/
+     top: 50%;
+    transform: translate(50%, -50%);
+ }
+ /*Controls - Slider Buttons*/
+
+ /*DOTS*/
+
+ .dots{
+     position: absolute;
+     left: 50%;
+     bottom: 0;
+     transform: translate(-50%, 2rem);
+     display: flex;
+     gap: 12px;
+
+
+ }
+
+ .dot{
+     height: 12px;
+     width: 12px;
+     background-color: #fff;
+     border: 2px solid yellow;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+
+ .dot--fill{
+     /*background-color: #087f5b;*/
+     background: linear-gradient(to right, #c89116, yellow);
+ }
+ /*DOTS*/
+
+/*Testimonials end*/
+
+/*PRICING*/
+.pricing-title{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 32px;
+}
+
+.container-pricing{
+    padding-top:7rem;
+       
+    background-color: #000101;
+}
+.pricing-table{
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.price-box{
+    width: 100%;
+    height: 26rem;
+    border-radius: 2rem;
+    padding: 0.5rem; 
+}
+
+.price-box:hover{
+    transform: scale(1.2);
+}
+
+.price-main{
+    width: 100%;
+    border: 1px solid black;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem; 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    background: #262c3c;
+    color: #fff;
+    border:1px solid gold;
+    border-bottom: none;
+    position: relative;
+}
+
+.p-titlle{
+    text-align: center;
+    background-image: linear-gradient(180deg, #c89116, yellow);
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.p-price{
+    text-align: center;
+    font-size: 2rem;
+    background-image: linear-gradient(180deg, #c89116, yellow);
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.p-price span{
+    font-size: 2rem;
+}
+
+.p-items{
+    font-size: 0.8rem;
+}
+
+.p-items li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.price-footer{
+    height: 20%;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border:1px solid gold;
+   border-top: none;
+   border-bottom-left-radius: 1.2rem;
+   border-bottom-right-radius: 1.2rem; 
+   background-color: #262c3c;
+}
+
+.p-button{
+    padding: 0.8rem 2.2rem;
+    border: unset;
+    background: linear-gradient(to right, #c89116, yellow);
+    border-radius: 1.7rem;
+    font-size: 16px;
+}
+
+.p-button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.recommended{
+    background: goldenrod;
+    width: 101%;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    border: 2px solid gold;
+}
+
+@media (max-width: 460px) {
+    .container-pricing{
+        width: 100%;
+        background-color: #000101;
+    }
+    .pricing-table{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    .price-box{
+        width: 70%;
+    }
+}
+
+
+@media(min-width: 461px) and ( max-width: 768px) {
+    .price-box{
+        width: 80%;
+    }
+    .pricing-table{
+        flex-wrap: wrap;
+    }
+    
+    .container-pricing{
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width: 769px) and ( max-width: 1199px) {
+    .price-box{
+        width: 50%;
+    }
+    .pricing-table{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    
+    .container-pricing{
+        width: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+}
+
+/*PRICING END*/
+
+/*Contact US*/
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000101;
+}
+
+.contact-left{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 20px;
+}
+
+.contact-left-title h2{
+   font-weight: 600;
+   font-size: 40px;
+   margin-bottom: 15px;
+   background-image: linear-gradient(180deg, #c89116, yellow);
+   -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent; 
+ -moz-background-clip: text;
+ -moz-text-fill-color: transparent;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: gold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid gold; /*the border becomes gold when we click on the specific area*/
+}
+
+.contact-inputs::placeholder{
+    color: #262c3c;
+}
+
+.contact-left button{
+    border: unset;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(to bottom, #c89116, yellow);
+    font-size: 16px;
+    gap: 10px;
+    
+}
+
+.contact-left button:hover{
+    cursor: pointer;
+    opacity: 0.7; 
+}
+
+.contact-right img{
+    width: 600px;
+    
+}
+
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+
+    .contact-right img{
+        display: none;
+    
+    }
+}
+
+/*Contact US END*/
+
+/*FOOTER*/
+.footer{
+    background-color: #262c3c;
+    padding: 70px 0;
+}
+
+.container-footer{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer-col{
+    width: 25%;
+    padding: 15px 0;
+}
+
+.footer-col h4{
+   font-size: 18px;
+   text-transform: capitalize;
+   margin-bottom: 35px;
+   font-weight: 500;
+   position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    border: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+ }
+
+ .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+ }
+
+ .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#ffffff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+ }
+
+ .footer-col ul li a:hover{
+    color: #fff;
+    padding-left: 10px;
+ }
+
+ .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(to right, #c89116, yellow);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #000101;
+    transition: all 0.5s ease;
+    font-size: 1.5rem;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background: #bbbbbb;
+   
+}
+
+/*FOOTER RESPONSIVE*/
+@media (max-width: 767px) {
+    .footer-col{
+        width: 48%;
+        margin-bottom: 30px;
+       margin-left: 10px;
+    }
+
+    
+}
+
+@media (max-width: 574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+   
+}
+
+/*FOOTER RESPONSIVE*/
+
+/*FOOTER*/
 
